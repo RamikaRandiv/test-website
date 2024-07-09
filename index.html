@@ -3,90 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Arduino Radar Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-
-    <style>
-      body {
-        padding: 0;
-        margin: 0;
-      }
-      .carousel-inner img {
-        width: 100%;
-        height: 100%;
-      }
-    </style>
+    <title>BCSS X-BAN</title>
   </head>
+
   <body>
-    <!---Navbar start-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <!--NAVBAR START-->
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
       <div class="container-fluid">
-        <img
-          class="nav-img"
-          src="https://imgs.search.brave.com/r26G9rao_oS0o6odggBM5UOiZtsQYPMdiyR3L_KutCs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sb2dv/dHlwLnVzL2ZpbGUv/YXJkdWluby5zdmc"
-          alt=""
-          width="70"
-          height="auto"
-        />
-        <a class="navbar-brand" href="#"
-          >Arduino Radar Project <sup>X-Ban</sup>
-        </a>
+        <div
+          class="nav-div d-flex align-items-center justify-content-center position-absolute col-11"
+        >
+          <a class="navbar-brand" href="#">BCSS</a>
+        </div>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
             <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="#aboutSection"
-                >About Us</a
-              >
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="#introSection"
-                >Introduction to Arduino</a
-              >
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
             </li>
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
-                id="navbarDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Arduino Radar System
+                Dropdown link
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
                 <li>
-                  <a class="dropdown-item" href="#"
-                    >What is an Arduino Radar System?</a
-                  >
-                </li>
-                <li><a class="dropdown-item" href="#">Component list</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Step by step...</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
                 </li>
               </ul>
             </li>
@@ -94,41 +76,83 @@
         </div>
       </div>
     </nav>
-    <!---Navbar end-->
 
-    <!--carousel start-->
+    <!--NAVBAR END-->
+    <!--About dates start-->
+    <br />
+    <div class="container" style="width: 100%; text-align: center">
+      LIVE July, 24<sup>th</sup> to 28<sup>th</sup>
+      <hr />
+    </div>
+    <!--About dates start-->
+
+    <!--COROUSEL START-->
     <div
-      id="carouselExampleFade"
-      class="carousel slide carousel-fade"
-      data-bs-ride="carousel"
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="false"
     >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img
-            src="https://github.com/RamikaRandiv/test-website/blob/main/home-made-robot-desk.jpg?raw=true"
+            src="/240_F_292661793_d9PLZ1w0vnqykuW3wYsnUxxdKJetog3H.webp"
             class="d-block w-100"
             alt="..."
           />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
         </div>
         <div class="carousel-item">
           <img
-            src="https://github.com/RamikaRandiv/test-website/blob/main/smart-asian-female-programer-learning-robot-arm-ai-coding-electronic-board-cable-stem-steam-she-try-testing-her-autonomous-robotic-arm-with-sensors-via-arduino-platform-home.jpg?raw=true"
+            src="/240_F_292661793_d9PLZ1w0vnqykuW3wYsnUxxdKJetog3H.webp"
             class="d-block w-100"
             alt="..."
           />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
         </div>
         <div class="carousel-item">
           <img
-            src="https://github.com/RamikaRandiv/test-website/blob/main/harrison-broadbent-__LXdDYiL-w-unsplash.jpg?raw=true"
+            src="/240_F_292661793_d9PLZ1w0vnqykuW3wYsnUxxdKJetog3H.webp"
             class="d-block w-100"
             alt="..."
           />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
         </div>
       </div>
       <button
         class="carousel-control-prev"
         type="button"
-        data-bs-target="#carouselExampleFade"
+        data-bs-target="#carouselExampleCaptions"
         data-bs-slide="prev"
       >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -137,116 +161,199 @@
       <button
         class="carousel-control-next"
         type="button"
-        data-bs-target="#carouselExampleFade"
+        data-bs-target="#carouselExampleCaptions"
         data-bs-slide="next"
       >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    <!--carousel end-->
+    <!--COROUSEL END-->
 
-    <!--About Us start-->
-    <div id="aboutSection" class="container mt-5">
-      <h2 class="text-center"><strong>About Us</strong></h2>
+    <!--CARDS SECTION START-->
+    <section class="container mt-5 col-12">
+      <h1 class="p-2">Our Projects</h1>
       <div>
-        <!--if needed<div class="col-md-6">
+        <div
+          class="card card-project col-xs-12 col-sm-12 col-md-6 col-lg-3 mt-2 p-2 float-md-start bg-dark text-white"
+        >
           <img
-            src="your-about-image.jpg"
-            class="img-fluid"
-            alt="About Us Image"
+            src="/240_F_292661793_d9PLZ1w0vnqykuW3wYsnUxxdKJetog3H.webp"
+            class="card-img"
+            alt="..."
           />
-        </div>-->
-        <div class="fs-5">
-          <p>
-            Welcome to our Arduino project website! We are a team of
-            enthusiastic makers and engineers passionate about exploring the
-            endless possibilities with Arduino. Our goal is to innovate,
-            educate, and inspire others to dive into the world of electronics
-            and programming.
-          </p>
-          <p>
-            Through our projects, we aim to demonstrate the potential of Arduino
-            in various applications, from simple experiments to complex systems.
-            Join us on our journey as we experiment, learn, and share our
-            findings with the community.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--About Us end-->
-
-    <!--Intro sectrion start-->
-
-    <div id="introSection" class="container mt-5">
-      <h2 class="text-center"><strong>Introduction to Arduino</strong></h2>
-      <div class="col-lg-12 container">
-        <div class="row">
-          <div class="col-lg-4 pe-3 container">
-            <img
-              class="img-fluid mx-auto d-block"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Arduino_Uno_-_R3.jpg/220px-Arduino_Uno_-_R3.jpg"
-              alt="an Arduino UNO board"
-            />
-            <p class="text-center">An Arduino board</p>
-          </div>
-          <div class="col-lg-8 mt-3 fs-5">
-            <p>
-              Arduino is an open-source electronics platform based on
-              easy-to-use hardware and software. It was created in 2005 by
-              Massimo Banzi and David Cuartielles to provide a cost-effective
-              way for students and hobbyists to create interactive projects.
-              Since its inception, Arduino has revolutionized the world of
-              electronics and DIY projects by making it accessible to a wider
-              audience
+          <div class="card-img-overlay">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
             </p>
+            <p class="card-text">Last updated 3 mins ago</p>
+          </div>
+        </div>
+        <div
+          class="card card-project col-xs-12 col-sm-12 col-md-6 col-lg-3 bg-dark text-white float-md-start mt-2 p-2"
+        >
+          <img
+            src="/240_F_292661793_d9PLZ1w0vnqykuW3wYsnUxxdKJetog3H.webp"
+            class="card-img"
+            alt="..."
+          />
+          <div class="card-img-overlay">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+            <p class="card-text">Last updated 3 mins ago</p>
+          </div>
+        </div>
+        <div
+          class="card card-project col-xs-12 col-sm-12 col-md-6 col-lg-3 bg-dark text-white float-md-start mt-2 p-2"
+        >
+          <img
+            src="/240_F_292661793_d9PLZ1w0vnqykuW3wYsnUxxdKJetog3H.webp"
+            class="card-img"
+            alt="..."
+          />
+          <div class="card-img-overlay">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+            <p class="card-text">Last updated 3 mins ago</p>
+          </div>
+        </div>
+        <div
+          class="card card-project col-xs-12 col-sm-12 col-md-6 col-lg-3 bg-dark text-white float-md-start mt-2 p-2"
+        >
+          <img
+            src="/240_F_292661793_d9PLZ1w0vnqykuW3wYsnUxxdKJetog3H.webp"
+            class="card-img"
+            alt="..."
+          />
+          <div class="card-img-overlay">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+            <p class="card-text">Last updated 3 mins ago</p>
+          </div>
+        </div>
+        <div
+          class="card card-project col-xs-12 col-sm-12 col-md-6 col-lg-3 bg-dark text-white float-md-start mt-2 p-2"
+        >
+          <img
+            src="/240_F_292661793_d9PLZ1w0vnqykuW3wYsnUxxdKJetog3H.webp"
+            class="card-img"
+            alt="..."
+          />
+          <div class="card-img-overlay">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+            <p class="card-text">Last updated 3 mins ago</p>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    <!--CARDS SECTION END-->
 
-    <!--Intro sectrion end-->
-
-    <!--About Arduino Radar System start-->
-    <div id="introSection" class="container mt-5">
-      <h2 class="text-center"><strong>Arduino Radar System</strong></h2>
-      <div>
-        <div class="col-lg-12 container mt-3">
-          <h4 class="">
-            <strong>What is an Arduino Radar System?</strong>
-          </h4>
-          <div class="row">
-            <div class="col-lg-8 mt-3 fs-5">
-              <p>
-                An Arduino radar system is a radar technology implemented using
-                Arduino microcontrollers. It utilizes radio waves to detect
-                objects, measure distances, and determine their speed and
-                direction. Arduino radar systems are versatile, affordable, and
-                widely used in applications such as obstacle detection, distance
-                measurement, motion sensing, and speed detection. They are
-                popular among hobbyists and engineers for their educational
-                value and practical applications in robotics, automation, and
-                security systems.
+    <!--NEWS SECTION START-->
+    <section style="clear: both" class="container news-section p-1 col-12">
+      <div class="container">
+        <h1 class="mt-5 mx-3">Featured News</h1>
+        <div
+          class="card card-news bg-dark text-white col-lg-6 col-md-12 col-sm-12 col-xs-12 mt-2 p-2 float-start"
+        >
+          <img
+            src="/240_F_292661793_d9PLZ1w0vnqykuW3wYsnUxxdKJetog3H.webp"
+            class="card-img card-news-img"
+            alt="..."
+          />
+          <div class="card-img-overlay">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+            <p class="card-text">Last updated 3 mins ago</p>
+          </div>
+        </div>
+        <div
+          class="card card-news bg-dark text-white col-lg-3 col-md-6 col-sm-12 col-xs-12 mt-2 p-2 float-start"
+        >
+          <img
+            src="/240_F_292661793_d9PLZ1w0vnqykuW3wYsnUxxdKJetog3H.webp"
+            class="card-img card-news-img"
+            alt="..."
+          />
+          <div class="card-img-overlay">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+            <p class="card-text">Last updated 3 mins ago</p>
+          </div>
+        </div>
+        <div
+          class="card-news-sub-container col-12 col-lg-3 col-md-6 col-sm-12 float-start mt-2"
+        >
+          <div class="card card-news-sub bg-dark text-white p-2">
+            <img
+              src="/240_F_292661793_d9PLZ1w0vnqykuW3wYsnUxxdKJetog3H.webp"
+              class="card-news-img-sub"
+              alt="..."
+            />
+            <div class="card-img-overlay">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
               </p>
             </div>
-            <div class="col-lg-4 pe-3 container">
-              <img
-                class="img-fluid mx-auto d-block"
-                src="/_u7ah9Se0j0.avif"
-                alt="an Arduino UNO board"
-              />
-              <p class="text-center">An Arduino Radar System</p>
+          </div>
+          <div class="card card-news-sub bg-dark text-white p-2">
+            <img
+              src="/240_F_292661793_d9PLZ1w0vnqykuW3wYsnUxxdKJetog3H.webp"
+              class="card-news-img-sub"
+              alt="..."
+            />
+            <div class="card-img-overlay">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!--About Arduino Radar System end-->
+    </section>
+    <!--NEWS SECTION END-->
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+    <!--HERO SECTION START-->
+    <!--HERO SECTION END-->
+
+    <!--NAVBAR START-->
+    <!--NAVBAR END-->
+    <!--NAVBAR START-->
+    <!--NAVBAR END-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
