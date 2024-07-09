@@ -1,0 +1,111 @@
+body{
+    font-family: inter , sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0;
+    color: black;
+}
+
+h1{
+    color:  rgb(27, 27, 27) !important;
+    font-weight: bold !important;
+}
+
+.bg-dark{
+    background-color: black !important;
+}
+
+
+/*--------------------
+-------NAVBAR---------
+---------------------*/
+
+.navbar-dark{
+    color: white !important;
+}
+
+.navbar{
+    font-family: inter !important;
+    font-weight: 600;
+    min-height: 100px;
+}
+
+.navbar-brand{
+    color: white !important;
+}
+
+.nav-div{
+    z-index: 1;
+}
+
+.navbar-toggler{
+    z-index: 2;
+    max-width: 55px;
+}
+
+.navbar-toggler-icon{
+    max-width: 40px;
+    height: 40px;
+}
+
+/*--------------------
+-------CAROUSEL-------
+---------------------*/
+
+.carousel{
+    max-width: 100%;
+}
+
+
+/*--------------------
+--------CARDS---------
+---------------------*/
+
+.card{
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+.card-project {
+    min-height:50vh !important;
+}
+
+.card-img{
+    min-height: 50vh !important;
+    border-radius: 0% ;
+    object-fit: cover !important;
+}
+
+
+/*--------------------
+--------NEWS----------
+---------------------*/
+
+.news-section{
+    min-width: 100%;
+}
+
+.card-news{
+    height: 70vh !important ;
+}
+
+.card-news-img{
+    height: 70vh !important ;
+}
+
+.card-news-sub-container{
+    height: 70vh !important;
+}
+
+.card-news-sub{
+    max-height: 33vh !important;
+    width: 100% !important;
+    margin-bottom:1vh;
+}
+
+.card-news-img-sub{
+    height: 33vh !important;
+    width: 100% !important;
+}
+
+
