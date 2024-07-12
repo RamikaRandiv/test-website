@@ -29,80 +29,69 @@
 
   <body>
     <!--NAVBAR START-->
-    <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
-      <div class="container-fluid">
-        <div
-          class="nav-div d-flex align-items-center justify-content-center position-absolute col-11"
-        >
-          <a class="navbar-brand" href="#">BCSS</a>
-        </div>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark text-dark">
+      <div class="container-fluid navbar-div">
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#ourProjects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown link
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
+              <a class="nav-link" href="#featuredNews">News</a>
             </li>
           </ul>
         </div>
       </div>
+      <div class="navbar-brand" href="#">BCSS</div>
     </nav>
     <!--NAVBAR END-->
 
     <!--HERO SECTION START-->
-    <div class="row col-12 mt-5">
-      <div class="col-row col-lg-4 col-md-4 col-sm-12 col-xs-12 px-5">
-        <h1>The X BAN Exhibition</h1>
-      </div>
-      <div class="col-row col-lg-8 col-md-8 row mt-2 mx-3 mx-md-0 mx-lg-0">
-        <div class="col-row col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-2">
-          <p>Orgainzed By</p>
-          <h4>Bandaranayake college</h4>
-        </div>
-        <div class="col-row col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-2">
-          <img src="https://raw.githubusercontent.com/RamikaRandiv/test-website/210a4f0c7bacc1b424bd51e2d728dc14562ca90c/calendar-todo-fill.svg" alt="" />
-          <h4>24-28 July 2024</h4>
-        </div>
-        <div class="col-row col-lg-4 col-md-4 col-xs-12 col-xs-12 mt-2">
-          <img src="https://raw.githubusercontent.com/RamikaRandiv/test-website/210a4f0c7bacc1b424bd51e2d728dc14562ca90c/map-pin-2-fill.svg" alt="" />
-          <h4>College Premises</h4>
-        </div>
+    <div class="hero-container">
+      <div class="container">
+        <h1 class="mb-3" style="color: rgb(0, 0, 0) !important">Heading</h1>
+        <h4 class="mb-3" style="color: rgb(0, 0, 0) !important">Subheading</h4>
       </div>
     </div>
     <!--HERO SECTION END-->
+
+    <!--DATE,TIME & VENUE SECTION START-->
+    <div>
+      <div class="row col-12 mt-2">
+        <div class="col-row col-lg-4 col-md-4 col-sm-12 col-xs-12 px-5">
+          <h1>The X BAN Technological Exhibition</h1>
+        </div>
+        <div class="col-row col-lg-8 col-md-8 row mt-2 mx-3 mx-md-0 mx-lg-0">
+          <div class="col-row col-lg-4 col-md-5 col-sm-12 col-xs-12 mt-2">
+            <p>Orgainzed By</p>
+            <h4>Bandaranayake college</h4>
+          </div>
+          <div class="col-row col-lg-4 col-md-3 col-sm-12 col-xs-12 mt-2">
+            <img src="/calendar-todo-fill.svg" alt="" />
+            <h4>24-28 July 2024</h4>
+          </div>
+          <div class="col-row col-lg-4 col-md-4 col-xs-12 col-xs-12 mt-2">
+            <img src="/map-pin-2-fill.svg" alt="" />
+            <h4>College Premises</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--DATE,TIME & VENUE START SECTION END-->
 
     <!--COROUSEL START
     <div
@@ -189,14 +178,14 @@
     COROUSEL END-->
 
     <!--ABOUT OF EXHIBITON START-->
-    <section class="container">
+    <section class="">
       <div class="container mt-5">
         <div class="row col-12">
           <div class="col-row col-lg-10 col-md-10 col-sm-12 col-xs-12">
             <div
               class="about-us-topic d-flex align-items-center justify-content-center"
             >
-              <h1>What is </h1>&nbsp
+              <h1>What is</h1>
               <h1>X BAN?</h1>
             </div>
             <div class="about-us-paragraph">
@@ -211,7 +200,7 @@
           >
             <img
               class="about-us-img"
-              src=""
+              src="https://scontent.fcmb1-2.fna.fbcdn.net/v/t39.30808-6/449075972_975922197870495_7346707507093152595_n.jpg?stp=dst-jpg_p180x540&_nc_cat=104&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=eobimq2JNskQ7kNvgHuTzJv&_nc_ht=scontent.fcmb1-2.fna&oh=00_AYDvX_-pazfinT7-xiK_I1v9tyC0-tDorSybM3CF7mBFiw&oe=66931398"
               alt="There is an image of x-ban logo"
             />
           </div>
@@ -221,97 +210,115 @@
     <!--ABOUT OF EXHIBITON END-->
 
     <!--CARDS SECTION START-->
-    <section class="container mt-5 col-12">
+    <section id="ourProjects" class="container mt-5 col-12">
       <h1 class="p-2">Our Projects</h1>
       <div>
         <div
           class="card card-project col-xs-12 col-sm-12 col-md-6 col-lg-3 mt-2 p-2 float-md-start bg-dark text-white"
         >
           <img
-            src="https://cdn.pixabay.com/photo/2019/11/07/17/07/universe-4609408_1280.jpg"
+            src="https://as1.ftcdn.net/v2/jpg/00/12/98/02/1000_F_12980249_6nOl3PnULKa01lStzcw2a1Ob5WZxjWYf.jpg"
             class="card-img"
             alt="..."
           />
           <div class="card-img-overlay">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">THE LAST TREE ON EARTH</h5>
             <p class="card-text">
               This is a wider card with supporting text below as a natural
               lead-in to additional content. This content is a little bit
               longer.
             </p>
-            <p class="card-text">Last updated 3 mins ago</p>
+            <p class="btn btn-light explore-btn">Explore</p>
           </div>
         </div>
         <div
           class="card card-project col-xs-12 col-sm-12 col-md-6 col-lg-3 bg-dark text-white float-md-start mt-2 p-2"
         >
           <img
-            src="https://cdn.pixabay.com/photo/2019/11/07/17/07/universe-4609408_1280.jpg"
+            src="https://imgs.search.brave.com/03oArTMvEaVCWagFRxJo0SB2SjzqNGEi8qJOvyODf-Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuYXhpb3MuY29t/L3RXeU91Yjc3UjRH/VGNSazR4UTVKeEdU/Vjh4MD0vMHgwOjM4/NDB4MjE2MC8xOTIw/eDEwODAvMjAyMy8w/OC8zMC8xNjkzNDA0/MjUwMzQyLmpwZz93/PTE5MjA"
             class="card-img"
             alt="..."
           />
           <div class="card-img-overlay">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">TRINEX HUMANOID ROBOT</h5>
             <p class="card-text">
               This is a wider card with supporting text below as a natural
               lead-in to additional content. This content is a little bit
               longer.
             </p>
-            <p class="card-text">Last updated 3 mins ago</p>
+            <p class="btn btn-light explore-btn">Explore</p>
           </div>
         </div>
         <div
           class="card card-project col-xs-12 col-sm-12 col-md-6 col-lg-3 bg-dark text-white float-md-start mt-2 p-2"
         >
           <img
-            src="https://cdn.pixabay.com/photo/2019/11/07/17/07/universe-4609408_1280.jpg"
+            src="https://imgs.search.brave.com/wKrxFDSUIKu2IhrFgOJU46th3Codldor94AnKqYO1kk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9hc3Ryb25hdXQt/c3BhY2Vhc3Ryb25h/dXQtc3BhY2Vhc3Ry/b25hdXQtc3BhY2Ut/c3BhY2UtZXhwbG9y/YXRpb24tY29uY2Vw/dC0zLWRfOTEyMjE0/LTE2NzY0LmpwZz9z/aXplPTYyNiZleHQ9/anBn"
             class="card-img"
             alt="..."
           />
           <div class="card-img-overlay">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">SPACE TRAVEL</h5>
             <p class="card-text">
               This is a wider card with supporting text below as a natural
               lead-in to additional content. This content is a little bit
               longer.
             </p>
-            <p class="card-text">Last updated 3 mins ago</p>
+            <p class="btn btn-light explore-btn">Explore</p>
           </div>
         </div>
         <div
           class="card card-project col-xs-12 col-sm-12 col-md-6 col-lg-3 bg-dark text-white float-md-start mt-2 p-2"
         >
           <img
-            src="https://cdn.pixabay.com/photo/2019/11/07/17/07/universe-4609408_1280.jpg"
+            src="https://imgs.search.brave.com/cUwwLUdGS16a5lkzUhCV1FuqOdltz-uiVN3h9rzM4zY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zY2ll/bmNlLm5hc2EuZ292/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDI0/LzA2L2h1YmJsZS1y/Y3c3LXBvdHcyNDI1/YS5qcGc_dz00MDk2/JmZvcm1hdD1qcGVn"
             class="card-img"
             alt="..."
           />
           <div class="card-img-overlay">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">COSMIC HORIZON</h5>
             <p class="card-text">
               This is a wider card with supporting text below as a natural
               lead-in to additional content. This content is a little bit
               longer.
             </p>
-            <p class="card-text">Last updated 3 mins ago</p>
+            <p class="btn btn-light explore-btn">Explore</p>
           </div>
         </div>
         <div
           class="card card-project col-xs-12 col-sm-12 col-md-6 col-lg-3 bg-dark text-white float-md-start mt-2 p-2"
         >
           <img
-            src="https://cdn.pixabay.com/photo/2019/11/07/17/07/universe-4609408_1280.jpg"
+            src="https://imgs.search.brave.com/jZaavcdoyBcjCSUs4cNazpUDmr0SJPnp_-HwIw7gmxs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA2LzI4LzQ1Lzk4/LzM2MF9GXzYyODQ1/OTgyM185bmtrSVlE/anpBaG1rTkVYWjYw/SEYzdHM5NmFtV2Iz/US5qcGc"
             class="card-img"
             alt="..."
           />
           <div class="card-img-overlay">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">QUANTUM COMPUTERS</h5>
             <p class="card-text">
               This is a wider card with supporting text below as a natural
               lead-in to additional content. This content is a little bit
               longer.
             </p>
-            <p class="card-text">Last updated 3 mins ago</p>
+            <p class="btn btn-light explore-btn">Explore</p>
+          </div>
+        </div>
+        <div
+          class="card card-project col-xs-12 col-sm-12 col-md-6 col-lg-3 bg-dark text-white float-md-start mt-2 p-2"
+        >
+          <img
+            src="https://imgs.search.brave.com/YKWWdlk8FjKQ0HasOrojzTcWuFSUNf6EO6Lef681Qf0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTQ5/MzI2OTk2NS9waG90/by9tYW5ncm92ZS1m/b3Jlc3QuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPTNxNHVt/NTNjOWhSZUVMRUdf/X3hCbjFSWkJ4RGha/LWN1UmxVSXYta05w/RTg9"
+            class="card-img"
+            alt="..."
+          />
+          <div class="card-img-overlay">
+            <h5 class="card-title">MANGROVE ECO SYSTEM</h5>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+            <p class="btn btn-light explore-btn">Explore</p>
           </div>
         </div>
       </div>
@@ -319,7 +326,11 @@
     <!--CARDS SECTION END-->
 
     <!--NEWS SECTION START-->
-    <section style="clear: both" class="container news-section p-1 col-12">
+    <section
+      style="clear: both"
+      id="featuredNews"
+      class="container news-section p-1 col-12"
+    >
       <div class="container">
         <h1 class="mt-5 mx-3">Featured News</h1>
         <div
@@ -359,9 +370,9 @@
           </div>
         </div>
         <div
-          class="card-news-sub-container col-12 col-lg-3 col-md-6 col-sm-12 float-start mt-2"
+          class="card-news-sub-container p-2 col-12 col-lg-3 col-md-6 col-sm-12 float-start mt-2"
         >
-          <div class="card card-news-sub bg-dark text-white p-2">
+          <div class="card card-news-sub bg-dark text-white">
             <img
               src="https://cdn.pixabay.com/photo/2019/11/07/17/07/universe-4609408_1280.jpg"
               class="card-news-img-sub"
@@ -376,7 +387,7 @@
               </p>
             </div>
           </div>
-          <div class="card card-news-sub bg-dark text-white p-2">
+          <div class="card card-news-sub bg-dark text-white">
             <img
               src="https://cdn.pixabay.com/photo/2019/11/07/17/07/universe-4609408_1280.jpg"
               class="card-news-img-sub"
@@ -399,10 +410,85 @@
     <!--HERO SECTION START-->
     <!--HERO SECTION END-->
 
-    <!--NAVBAR START-->
-    <!--NAVBAR END-->
-    <!--NAVBAR START-->
-    <!--NAVBAR END-->
+    <!--FOOTER SECTION START-->
+    <footer style="clear: both" class="container">
+      <div class="d-flex align-items-center col-12">
+        <div>dsadwed</div>
+      </div>
+    </footer>
+    <!--FOOTER SECTION END-->
+
+    <!--COUNT DOWN START
+   lc-needs-hard-refresh 
+    <div class="container-fluid overflow-hidden p-0">
+      <div class="row g-0">
+        <div
+          lc-helper="background"
+          class="col-md-6 order-md-2"
+          style="
+            min-height: 100vh;
+            background-size: cover;
+            background-position: center;
+            background-image: url('https://images.unsplash.com/photo-1484981184820-2e84ea0af397?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;h=768&amp;fit=crop&amp;ixid=eyJhcHBfaWQiOjM3ODR9');
+          "
+        ></div>
+        <div
+          class="col-md-6 order-md-1 my-auto text-center"
+          style="padding: 10vw"
+        >
+          <div id="paragraph " class="lc-block mb-3">
+            <div editable="rich">
+              <h2>Opening soon</h2>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+
+          <div class="lc-block mb-3">
+            <p class="display-4 text" id="demo"></p>
+          </div>
+
+          /lc-block 
+
+          <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("July 9, 2024 21:00:00").getTime();
+
+            // Update the count down every 1 second
+            var x = setInterval(function () {
+              // Get todays date and time
+              var now = new Date().getTime();
+
+              // Find the distance between now and the count down date
+              var distance = countDownDate - now;
+
+              // Time calculations for days, hours, minutes and seconds
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor(
+                (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+              );
+              var minutes = Math.floor(
+                (distance % (1000 * 60 * 60)) / (1000 * 60)
+              );
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+              // Display the result in the element with id="demo"
+              document.getElementById("demo").innerHTML =
+                days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+              // If the count down is finished, write some text
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML =
+                  "THE MOMENT YOU HAVE BEING WAITING FOR HAS BEGUN";
+                document.getElementById("paragraph").hidden = "true";
+              }
+            }, 1000);
+          </script>
+        </div>
+      </div>
+    </div>
+  COUNT DOWN END-->
 
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
