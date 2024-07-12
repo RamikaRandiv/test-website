@@ -7,6 +7,10 @@ body{
     background-color: rgb(22,21,25);
 }
 
+.nav-link:hover , .nav-link.active{
+    color: rgb(197, 44, 138);
+}
+
 h1, h2 ,h3 , h4, h5{
     color:  rgb(255, 255, 255) !important;
     font-weight: bold !important;
@@ -26,6 +30,8 @@ p{
 
 .card:hover{
     cursor: pointer;
+    /*if cards doesn't fit correctly when hover remove the border of 2px*/
+    border: 2px;
 }
 
 /*--------------------
@@ -76,10 +82,10 @@ p{
 /*--------------------
 -------CAROUSEL-------
 ---------------------*/
-
-.carousel{
-    max-width: 100%;
+.swiper-pagination-bullet{
+    background-color: rgb(197, 44, 138) !important;
 }
+
 
 /*--------------------
 -------ABOUT US-------
