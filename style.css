@@ -7,8 +7,8 @@ body{
     background-color: rgb(22,21,25);
 }
 
-.nav-link:hover , .nav-link.active{
-    color: rgb(197, 44, 138);
+p{
+    color: rgb(139, 139, 139);
 }
 
 h1, h2 ,h3 , h4, h5{
@@ -16,12 +16,16 @@ h1, h2 ,h3 , h4, h5{
     font-weight: bold !important;
 }
 
-.bg-dark{
-    background-color: black !important;
+a{
+    text-decoration: none;       
 }
 
-p{
-    color: rgb(139, 139, 139);
+.nav-link:hover , .nav-link.active{
+    color: rgb(197, 44, 138);
+}
+
+.bg-dark{
+    background-color: black !important;
 }
 
 .card-img-overlay{
@@ -37,6 +41,34 @@ p{
 /*--------------------
 -------NAVBAR---------
 ---------------------*/
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+
+.dropdown-toggle:hover{
+    color:  rgb(197, 44, 138) !important;
+    cursor: pointer !important;
+}
+
+.dropdown-item:hover{
+    color:  rgb(197, 44, 138) !important;
+    cursor: pointer !important;
+}
+
+.dropdown-item:active{
+    background-color:  rgb(197, 44, 138) !important;
+    color: white !important;
+    cursor: pointer !important;
+}
+
+.dropdown-menu{
+    border: none !important;
+}
 
 .navbar{
     min-height: 70px;
