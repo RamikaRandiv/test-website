@@ -5,7 +5,13 @@ body{
     margin: 0;
     padding: 0;
     background-color: rgb(22,21,25);
+    user-select: none;
 }
+
+div{
+    overflow: hidden;
+}
+
 
 p{
     color: rgb(139, 139, 139);
@@ -14,6 +20,16 @@ p{
 h1, h2 ,h3 , h4, h5{
     color:  rgb(255, 255, 255) !important;
     font-weight: bold !important;
+}
+
+.topic-1{
+    color: rgb(149,62,116) !important;
+    font-weight: bold;
+}
+
+.topic-2{
+    color:  rgb(255, 255, 255)!important;
+    font-weight: bold;
 }
 
 a{
@@ -202,5 +218,79 @@ a{
 
 
 /*--------------------
---------CARDS---------
+---------Maps---------
 ---------------------*/
+
+.maps{
+    text-align: center;
+}
+
+.btn{
+    margin: 5px;
+}
+
+.block1, .block2, .block3 , .block4, .block5,.block6 {
+    width: 100%;
+    aspect-ratio: 1 !important;
+}
+
+.block1{
+    background-color: rgba(0, 0, 255, 0.384);
+}
+
+.block2{
+    background-color: rgba(0, 128, 0, 0.267);
+}
+.block3{
+    background-color: rgba(162, 0, 255, 0.288);
+}
+
+.block4{
+    background-color: rgba(0, 217, 255, 0.199);
+}
+
+.block5{
+    background-color: rgba(132, 0, 255, 0.199);
+}
+
+.block6{
+    background-color: rgba(219, 205, 3, 0.199);
+}
+
+.block7, .block8{
+    aspect-ratio: 1;
+    width: 100%;
+}
+
+.div{
+    width: 100%;
+}
+
+.block7{
+    background-color: rgba(51, 255, 0, 0.267);
+}
+
+.block8{
+    background-color: rgba(78, 38, 141, 0.247);
+}
+
+/*
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media(prefers-reduced-motion){
+    .hidden{
+        transition: none;
+    }
+}
+*/
