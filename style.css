@@ -8,13 +8,12 @@ body{
     user-select: none;
 }
 
-div{
-    overflow: hidden;
-}
-
-
 p{
     color: rgb(139, 139, 139);
+}
+
+div{
+    overflow: hidden !important;
 }
 
 h1, h2 ,h3 , h4, h5{
@@ -113,14 +112,15 @@ a{
 -----HERO SECTION-----
 ---------------------*/
 
-.hero-container{
-    width: 100vw;
-    height: 60vh;
-    background-position: center;
-    background-size: cover;
+.parallax {
+    background-image: url('https://cdn.pixabay.com/photo/2017/09/10/18/29/universe-2736507_1280.jpg');
+    height: 70vh; /* Adjust as needed */
     background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-    color: black;
+  
     display: flex;
     justify-content: start;
     align-items: center;
@@ -173,6 +173,7 @@ a{
     height: 50vh !important;
     border-radius: 0% ;
     object-fit: cover !important;
+    filter: contrast(90%);
 }
 
 .card-title{
@@ -183,6 +184,10 @@ a{
     background-color: rgb(246,65,55);
     border-radius: 50%;
     margin-left: 20px;
+}
+
+.swiper-slide:active{
+    cursor: grabbing!important;
 }
 
 /*--------------------
@@ -220,13 +225,8 @@ a{
 /*--------------------
 ---------Maps---------
 ---------------------*/
-
 .maps{
     text-align: center;
-}
-
-.btn{
-    margin: 5px;
 }
 
 .block1, .block2, .block3 , .block4, .block5,.block6 {
@@ -273,6 +273,44 @@ a{
 .block8{
     background-color: rgba(78, 38, 141, 0.247);
 }
+
+.block1:hover, .block2:hover, .block3:hover , .block4:hover, .block5:hover,.block6:hover, .block7:hover, .block8:hover{
+    background-color: blue;
+}
+
+.block1, .block2, .block3 , .block4, .block5,.block6, .block7, .block8 {
+    overflow-y: hidden;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    width:100px ;
+    height: 100px;
+    margin-top: 15%;
+}
+
+.carousel{
+    position: relative !important;
+}
+
+.carousel > h1{
+    text-align: center;
+}
+
+.carousel-indicators{
+    bottom: -40px !important;
+    position: absolute!important;
+}
+
+.carousel-indicators > button{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+}
+
+.carousel-item  > .container > h3{
+    text-align: center;
+}
+
 
 /*
 .hidden{
