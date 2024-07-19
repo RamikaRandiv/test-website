@@ -1,3 +1,10 @@
+window.addEventListener("scroll", function () {
+  var scrolled = window.pageYOffset;
+  var parallax = document.querySelector(".parallax");
+  var coords = "50% " + -(scrolled * 0.5) + "px";
+  parallax.style.backgroundPosition = coords;
+});
+
 // Set the date we're counting down to
 var countDownDate = new Date("July 24, 2024 00:00:00").getTime();
 
