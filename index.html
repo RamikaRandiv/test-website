@@ -3,11 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="/file_type_ninja_icon_130303 (1).png"
-    />
+    <!--favicon-->
+    <link rel="icon" type="image/x-icon" href="/science.jpg" />
+    <!--google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,29 +18,30 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
     />
+    <!--boostrap files including bostrap 5.3-->
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
     />
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper@9.3.1/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>BCSS X-BAN</title>
+    <title>BCSS</title>
   </head>
 
   <body>
     <!--NAVBAR START-->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark text-dark">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
       <div class="container-fluid navbar-div">
         <button
           class="navbar-toggler"
@@ -69,35 +68,37 @@
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
-                >Classes</a
+                aria-expanded="false"
               >
+                Classes
+              </a>
               <ul class="dropdown-menu">
-                <li class="dropend">
-                  <div
-                    class="dropdown-toggle px-2"
+                <li class="btn-group dropend">
+                  <a
+                    class="ms-3 dropdown-toggle dropdown-toggle-2"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    Math Section
-                  </div>
+                    Maths Classes
+                  </a>
                   <ul class="dropdown-menu">
-                    <a href=""><li class="dropdown-item">12</li></a>
-                    <a href=""><li class="dropdown-item">12</li></a>
-                    <a href=""><li class="dropdown-item">12</li></a>
+                    <li><a class="dropdown-item" href="#">12</a></li>
+                    <li><a class="dropdown-item" href="#">12</a></li>
+                    <li><a class="dropdown-item" href="#">12</a></li>
                   </ul>
                 </li>
-                <li class="dropend">
-                  <div
-                    class="dropdown-toggle px-2"
+                <li class="btn-group dropend">
+                  <a
+                    class="ms-3 dropdown-toggle dropdown-toggle-2"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    Bio Section
-                  </div>
+                    Bio Classes
+                  </a>
                   <ul class="dropdown-menu">
-                    <a href=""><li class="dropdown-item">12</li></a>
-                    <a href=""><li class="dropdown-item">12</li></a>
-                    <a href=""><li class="dropdown-item">12</li></a>
+                    <li><a class="dropdown-item" href="#">12</a></li>
+                    <li><a class="dropdown-item" href="#">12</a></li>
+                    <li><a class="dropdown-item" href="#">12</a></li>
                   </ul>
                 </li>
               </ul>
@@ -105,30 +106,49 @@
           </ul>
         </div>
       </div>
-      <div class="navbar-brand" href="#">BCSS</div>
+      <div
+        class="nav-brand position-absolute top-0 start-50 mt-2 d-flex justify-content-center align-items-center"
+        href="#"
+        style="width: 70px; height: 70px"
+      >
+        <a href="">
+          <img src="/science2.png" style="width: 60px; height: auto" />
+        </a>
+      </div>
     </nav>
     <!--NAVBAR END-->
 
     <!--HERO SECTION START-->
-    <div class="parallax">
-      <!--COUNT DOWN START-->
-      <div class="container">
-        <div>
-          <h3 id="paragraph" style="color: rgb(26, 26, 28) !important">
-            To begin the X BAN
-          </h3>
+    <div class="card" style="background-image: none; height: 80vh">
+      <div
+        style="
+          background-image: url('/bg.jpg');
+          height: 100%;
+          filter: brightness(80%);
+        "
+        class="parallax"
+        alt=""
+      ></div>
+      <div class="position-absolute end-0 bottom-0 m-2">
+        <!--COUNT DOWN START-->
+        <div class="container">
+          <div>
+            <h3 id="paragraph" style="color: rgb(255, 255, 255) !important">
+              To begin the X BAN
+            </h3>
+          </div>
+          <div class="mb-3">
+            <h1 style="color: rgb(246, 65, 55) !important" id="demo"></h1>
+          </div>
         </div>
-        <div class="mb-3">
-          <h1 style="color: rgb(149, 62, 116) !important" id="demo"></h1>
-        </div>
+        <!--COUNT DOWN END-->
       </div>
-      <!--COUNT DOWN END-->
     </div>
     <!--HERO SECTION END-->
 
     <!--DATE,TIME & VENUE SECTION START-->
-    <div>
-      <div class="row col-12 mt-2">
+    <div class="dtv pt-3">
+      <div class="row col-12">
         <div class="col-row col-lg-4 col-md-4 col-sm-12 col-xs-12 px-5">
           <div>
             <p class="h1 topic-1">The X BAN</p>
@@ -137,21 +157,15 @@
         </div>
         <div class="col-row col-lg-8 col-md-8 row mt-2 mx-3 mx-md-0 mx-lg-0">
           <div class="col-row col-lg-4 col-md-5 col-sm-12 col-xs-12 mt-2">
-            <p>Orgainzed By</p>
+            <p style="color: rgb(59, 59, 59)">Orgainzed By</p>
             <h4>Bandaranayake college</h4>
           </div>
           <div class="col-row col-lg-4 col-md-3 col-sm-12 col-xs-12 mt-2">
-            <img
-              src="https://raw.githubusercontent.com/RamikaRandiv/test-website/8a7b62466fde2c89fa00223aa1ff6ede374b0fee/calendar-todo-fill.svg"
-              alt=""
-            />
+            <img src="/calendar-todo-fill.svg" alt="" />
             <h4>24-28 July 2024</h4>
           </div>
           <div class="col-row col-lg-4 col-md-4 col-xs-12 col-xs-12 mt-2">
-            <img
-              src="https://raw.githubusercontent.com/RamikaRandiv/test-website/4fec540baa8cbd7bdbaafd9f4769557770743ec3/map-pin-2-fill.svg"
-              alt=""
-            />
+            <img src="/map-pin-2-fill.svg" alt="" />
             <h4>College Premises</h4>
           </div>
         </div>
@@ -159,9 +173,165 @@
     </div>
     <!--DATE,TIME & VENUE START SECTION END-->
 
-    <!--ABOUT OF EXHIBITON START-->
-    <section class="">
-      <div class="container mt-5 col-12">
+    <!--NEWS SECTION START-->
+    <section class="container">
+      <div class="container news-section mt-5 col-12" id="featuredNews">
+        <div class="mb-4 row col-12 ps-4 d-flex justify-content-center">
+          <h1 class="col-row col-lg-8 col-md-12 col-sm-12 col-xs-12 mt-3">
+            Featured News
+          </h1>
+          <div class="col-row col-lg-4 col-md-12 col-sm-12 col-xs-12">
+            <a
+              href="/news.html"
+              class="d-flex justify-content-lg-end align-items-start mt-4"
+            >
+              <h5>More BCSS News</h5>
+              <img
+                class="arrow-img"
+                style="
+                  width: 20px;
+                  height: 20px;
+                  margin-bottom: 10px !important;
+                  padding: 0px !important;
+                "
+                src="/arrow-right-fill.svg"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+        <a href="">
+          <div
+            class="card card-news bg-dark text-white col-lg-6 col-md-12 col-sm-12 col-xs-12 mt-2 p-2 float-start"
+          >
+            <img
+              src="https://cdn.pixabay.com/photo/2019/11/07/17/07/universe-4609408_1280.jpg"
+              class="card-img card-news-img"
+              alt="..."
+            />
+            <div class="p-4 position-absolute top-0 start-0">
+              <p style="font-family: DM Mono">Article</p>
+            </div>
+            <div class="px-5 position-absolute bottom-0 start-0">
+              <h5 class="card-title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Debitis, minima aliquid?
+              </h5>
+              <div class="post" data-timestamp="2024-07-20T16:09:00Z">
+                <p class="time-ago"></p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href=""
+          ><div
+            class="card card-news bg-dark text-white col-lg-3 col-md-6 col-sm-12 col-xs-12 mt-2 p-2 float-start"
+          >
+            <img
+              src="https://cdn.pixabay.com/photo/2019/11/07/17/07/universe-4609408_1280.jpg"
+              class="card-img card-news-img"
+              alt="..."
+            />
+            <div class="p-4 position-absolute top-0 start-0">
+              <p style="font-family: DM Mono">Article</p>
+            </div>
+            <div class="px-4 position-absolute bottom-0 start-0">
+              <h5 class="card-title">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Debitis, minima aliquid?
+              </h5>
+              <div class="post" data-timestamp="2024-07-20T16:09:00Z">
+                <p class="time-ago"></p>
+              </div>
+            </div></div
+        ></a>
+
+        <div
+          class="card-news-sub-container p-2 col-12 col-lg-3 col-md-6 col-sm-12 float-start mt-2"
+        >
+          <a href="">
+            <div class="card card-news-sub bg-dark text-white">
+              <img
+                src="https://cdn.pixabay.com/photo/2019/11/07/17/07/universe-4609408_1280.jpg"
+                class="card-news-img-sub"
+                alt="..."
+              />
+              <div class="p-3 ps-4 position-absolute top-0 start-0">
+                <p style="font-family: DM Mono">Article</p>
+              </div>
+              <div class="px-4 position-absolute bottom-0 start-0">
+                <h5 class="card-title">
+                  Lorem ipsum dolor sit amet consectetur...
+                </h5>
+                <div class="post" data-timestamp="2024-07-20T16:09:00Z">
+                  <p class="time-ago"></p>
+                </div>
+              </div></div></a
+          ><a href="">
+            <div class="card card-news-sub bg-dark text-white mt-2">
+              <img
+                src="https://cdn.pixabay.com/photo/2019/11/07/17/07/universe-4609408_1280.jpg"
+                class="card-news-img-sub"
+                alt="..."
+              />
+              <div class="p-3 ps-4 position-absolute top-0 start-0">
+                <p style="font-family: DM Mono">Article</p>
+              </div>
+              <div class="px-4 position-absolute bottom-0 start-0">
+                <h5 class="card-title">
+                  Lorem ipsum dolor sit amet consectetur...
+                </h5>
+                <div class="post" data-timestamp="2024-07-20T16:09:00Z">
+                  <p class="time-ago"></p>
+                </div>
+              </div></div
+          ></a>
+        </div>
+      </div>
+    </section>
+    <!--NEWS SECTION END-->
+
+    <!--ALL NEWS START-->
+    <div class="mt-5" style="clear: both">
+      <div class="mt-4 pt-5">
+        <!--news section start-->
+        <div class="col-12" style="background-color: black">
+          <div class="row">
+            <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12 pt-4 px-5">
+              <h1 class="col-12 pb-2" style="color: white !important">
+                What is X BAN ?
+              </h1>
+              <small
+                class="col-12"
+                style="
+                  color: aliceblue;
+                  font-family: sans-serif;
+                  font-size: 14px;
+                "
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                dignissimos numquam labore veritatis. Illo odio atque
+                laudantium. Molestiae, pariatur ad dolor commodi minus
+                temporibus expedita sed velit culpa tempora nisi sint, unde
+                dicta ut nostrum rem quam modi itaque? Ipsum sequi quidem ipsam
+                dolorum incidunt rerum reprehenderit.
+              </small>
+            </div>
+            <img
+              class="col-lg-7 col-md-12 col-sm-12 col-xs-12 py-5 px-4"
+              src="https://archives1.dailynews.lk/sites/default/files/news/2018/10/31/z_T%26C-p25-Space-00.jpg"
+              style="filter: brightness(80%)"
+            />
+          </div>
+        </div>
+        <!--news section end-->
+      </div>
+    </div>
+    <!--ALL NEWS END-->
+
+    <!--ABOUT OF XBAN 
+    <section class="about p-3">
+      <div class="container mt-2 col-12">
         <div class="row">
           <div class="col-row col-lg-10 col-md-10 col-sm-12 col-xs-12">
             <div
@@ -182,109 +352,27 @@
           >
             <img
               class="about-us-img mt-2"
-              src="https://scontent.fcmb1-2.fna.fbcdn.net/v/t39.30808-6/449436376_122098003712396627_7324697426299537593_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=a2Jimij75FUQ7kNvgG3O1as&_nc_ht=scontent.fcmb1-2.fna&oh=00_AYDInURzdw5TIHMtN8TsHKEpZV6Cm6xv5gWFKnDDUSsGCg&oe=66985216"
+              src="https://www.bcoba.lk/xban/img/xban2024crp.png"
               alt="There is an image of x-ban logo"
             />
           </div>
         </div>
       </div>
     </section>
-    <!--ABOUT OF EXHIBITON END-->
+   OF XBAN END-->
 
-    <!--NEWS SECTION START-->
-    <section
-      style="clear: both"
-      id="featuredNews"
-      class="container news-section p-1 col-12"
-    >
-      <div class="container">
-        <h1 class="mt-5 mx-3">Featured News</h1>
-        <div
-          class="card card-news bg-dark text-white col-lg-6 col-md-12 col-sm-12 col-xs-12 mt-2 p-2 float-start"
-        >
-          <img
-            src="https://cdn.pixabay.com/photo/2019/11/07/17/07/universe-4609408_1280.jpg"
-            class="card-img card-news-img"
-            alt="..."
-          />
-          <div class="card-img-overlay">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </p>
-            <p class="card-text">Last updated 3 mins ago</p>
-          </div>
-        </div>
-        <div
-          class="card card-news bg-dark text-white col-lg-3 col-md-6 col-sm-12 col-xs-12 mt-2 p-2 float-start"
-        >
-          <img
-            src="https://cdn.pixabay.com/photo/2019/11/07/17/07/universe-4609408_1280.jpg"
-            class="card-img card-news-img"
-            alt="..."
-          />
-          <div class="card-img-overlay">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </p>
-            <p class="card-text">Last updated 3 mins ago</p>
-          </div>
-        </div>
-        <div
-          class="card-news-sub-container p-2 col-12 col-lg-3 col-md-6 col-sm-12 float-start mt-2"
-        >
-          <div class="card card-news-sub bg-dark text-white">
-            <img
-              src="https://cdn.pixabay.com/photo/2019/11/07/17/07/universe-4609408_1280.jpg"
-              class="card-news-img-sub"
-              alt="..."
-            />
-            <div class="card-img-overlay">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-            </div>
-          </div>
-          <div class="card card-news-sub bg-dark text-white">
-            <img
-              src="https://cdn.pixabay.com/photo/2019/11/07/17/07/universe-4609408_1280.jpg"
-              class="card-news-img-sub"
-              alt="..."
-            />
-            <div class="card-img-overlay">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--NEWS SECTION END-->
-
-    <!--OUR PROJECTS START-->
-    <section class="container mt-5 col-12">
-      <h1 id="ourProjects" class="p-2">Our Projects</h1>
-      <!-- Blog 1 Pro - Bootstrap Brain Component -->
-      <section class="py-3 py-md-5 py-xl-8">
-        <!-- Slider main container -->
+    <!--OUR PROJECTS START
+    <section class="container mt-5 pt-5 col-12" style="clear: both">
+      <h1 id="ourProjects" class="ps-3">Our Projects</h1>
+       Blog 1 Pro - Bootstrap Brain Component 
+      <div class="py-3 py-md-5 py-xl-8">
+         Slider main container
         <div class="container">
-          <!-- Slider Swiper Container -->
+           Slider Swiper Container 
           <div class="swiper bsb-blog-pro-1">
-            <!-- Additional required wrapper -->
+            Additional required wrapper 
             <div class="swiper-wrapper mb-5 mb-md-6">
-              <!-- Slides -->
+              Slides
               <div
                 class="swiper-slide card card-project text-white"
                 style="height: 50vh"
@@ -407,402 +495,56 @@
               </div>
             </div>
 
-            <!-- If we need pagination -->
+           If we need pagination
             <div
               class="swiper-pagination position-relative bottom-0"
               style="--swiper-pagination-bullet-size: 10px"
             ></div>
           </div>
         </div>
-      </section>
+      </div>
     </section>
-    <!--OUR PROJECTS END-->
-
-    <!--MAPS START-->
-    <div id="carouselExampleIndicators" class="carousel slide mt-5">
-      <h1>Projects Map</h1>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="container">
-            <h3>1<sup>st</sup> FLOOR</h3>
-            <div class="row col-12">
-              <div class="col-row col-2">
-                <div id="block1" class="block1">
-                  <div>
-                    <p class="display-6">12A</p>
-                    <p>Lorem ipsum dolor</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-row col-2">
-                <div id="block2" class="block2">
-                  <p class="display-6">12B</p>
-                  <p>Lorem, ipsum dolor.</p>
-                </div>
-              </div>
-              <div class="col-row col-2">
-                <div id="block3" class="block3">
-                  <p class="display-6">12C</p>
-                  <p>Lorem, ipsum dolor.</p>
-                </div>
-              </div>
-              <div class="col-row col-2">
-                <div id="block4" class="block4">
-                  <p class="display-6">12D</p>
-                  <p>Lorem, ipsum dolor.</p>
-                </div>
-              </div>
-              <div class="col-row col-2">
-                <div id="block5" class="block5">
-                  <p class="display-6">12E</p>
-                  <p>Lorem, ipsum dolor.</p>
-                </div>
-              </div>
-              <div class="col-row col-2">
-                <div id="block6" class="block6">
-                  <p class="display-6">12F</p>
-                  <p>Lorem, ipsum dolor.</p>
-                </div>
-              </div>
-            </div>
-            <div class="div col-12 row mt-3">
-              <div class="col-2 col-row">
-                <div id="block7" class="block7">
-                  <p class="display-6">12G</p>
-                  <p>Lorem, ipsum dolor.</p>
-                </div>
-              </div>
-              <div class="col-row col-2">
-                <img class="col-12" src="/arrow-up-line.svg" alt="" />
-              </div>
-              <div class="col-row col-2"><div></div></div>
-              <div class="col-row col-2"><div></div></div>
-              <div class="col-row col-2">
-                <img class="col-12" src="/arrow-down-fill.svg" alt="" />
-              </div>
-              <div class="col-2 col-row">
-                <div id="block8" class="block8">
-                  <p class="display-6">12H</p>
-                  <p>Lorem, ipsum dolor.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="container">
-            <h3>2<sup>nd</sup> FLOOR</h3>
-            <div class="row col-12">
-              <div class="col-row col-2">
-                <div id="block1" class="block1">
-                  <div>
-                    <p class="display-6">12A</p>
-                    <p>Lorem ipsum dolor</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-row col-2">
-                <div id="block2" class="block2">
-                  <p class="display-6">12B</p>
-                  <p>Lorem, ipsum dolor.</p>
-                </div>
-              </div>
-              <div class="col-row col-2">
-                <div id="block3" class="block3">
-                  <p class="display-6">12C</p>
-                  <p>Lorem, ipsum dolor.</p>
-                </div>
-              </div>
-              <div class="col-row col-2">
-                <div id="block4" class="block4">
-                  <p class="display-6">12D</p>
-                  <p>Lorem, ipsum dolor.</p>
-                </div>
-              </div>
-              <div class="col-row col-2">
-                <div id="block5" class="block5">
-                  <p class="display-6">12E</p>
-                  <p>Lorem, ipsum dolor.</p>
-                </div>
-              </div>
-              <div class="col-row col-2">
-                <div id="block6" class="block6">
-                  <p class="display-6">12F</p>
-                  <p>Lorem, ipsum dolor.</p>
-                </div>
-              </div>
-            </div>
-            <div class="div col-12 row mt-3">
-              <div class="col-2 col-row">
-                <div id="block7" class="block7">
-                  <p class="display-6">12G</p>
-                  <p>Lorem, ipsum dolor.</p>
-                </div>
-              </div>
-              <div class="col-row col-2">
-                <img class="col-12" src="/arrow-up-line.svg" alt="" />
-              </div>
-              <div class="col-row col-2"><div></div></div>
-              <div class="col-row col-2"><div></div></div>
-              <div class="col-row col-2">
-                <img class="col-12" src="/arrow-down-fill.svg" alt="" />
-              </div>
-              <div class="col-2 col-row">
-                <div id="block8" class="block8">
-                  <p class="display-6">12H</p>
-                  <p>Lorem, ipsum dolor.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="container">
-            <h3>3<sup>rd</sup> FLOOR</h3>
-            <div class="row col-12">
-              <div class="col-row col-2">
-                <div id="block1" class="block1">
-                  <div>
-                    <p class="display-6">12A</p>
-                    <p>Lorem ipsum dolor</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-row col-2">
-                <div id="block2" class="block2">
-                  <p class="display-6">12B</p>
-                  <p>Lorem, ipsum dolor.</p>
-                </div>
-              </div>
-              <div class="col-row col-2">
-                <div id="block3" class="block3">
-                  <p class="display-6">12C</p>
-                  <p>Lorem, ipsum dolor.</p>
-                </div>
-              </div>
-              <div class="col-row col-2">
-                <div id="block4" class="block4">
-                  <p class="display-6">12D</p>
-                  <p>Lorem, ipsum dolor.</p>
-                </div>
-              </div>
-              <div class="col-row col-2">
-                <div id="block5" class="block5">
-                  <p class="display-6">12E</p>
-                  <p>Lorem, ipsum dolor.</p>
-                </div>
-              </div>
-              <div class="col-row col-2">
-                <div id="block6" class="block6">
-                  <p class="display-6">12F</p>
-                  <p>Lorem, ipsum dolor.</p>
-                </div>
-              </div>
-            </div>
-            <div class="div col-12 row mt-3">
-              <div class="col-2 col-row">
-                <div id="block7" class="block7">
-                  <p class="display-6">12G</p>
-                  <p>Lorem, ipsum dolor.</p>
-                </div>
-              </div>
-              <div class="col-row col-2">
-                <img class="col-12" src="/arrow-up-line.svg" alt="" />
-              </div>
-              <div class="col-row col-2"><div></div></div>
-              <div class="col-row col-2"><div></div></div>
-              <div class="col-row col-2">
-                <img class="col-12" src="/arrow-down-fill.svg" alt="" />
-              </div>
-              <div class="col-2 col-row">
-                <div id="block8" class="block8">
-                  <p class="display-6">12H</p>
-                  <p>Lorem, ipsum dolor.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-      </div>
-    </div>
-
-    <!--MAPS END-->
+    OUR PROJECTS END-->
 
     <!--FOOTER SECTION START-->
-    <footer
-      style="clear: both; background-color: rgb(32, 31, 36)"
-      class="py-3 mt-5"
-    >
-      <div class="container mt-2">
-        <ul class="nav justify-content-center pb-3 mb-3 border-bottom">
+    <footer class="py-3 mt-5" style="clear: both">
+      <div class="container">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
           <li class="nav-item">
             <a href="#" class="nav-link px-2">Home</a>
           </li>
           <li class="nav-item">
-            <a href="#ourProjects" class="nav-link px-2">Projects</a>
+            <a href="#" class="nav-link px-2">Features</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link px-2">Map</a>
+            <a href="#" class="nav-link px-2">Pricing</a>
           </li>
           <li class="nav-item">
-            <a href="#about" class="nav-link px-2">About</a>
+            <a href="#" class="nav-link px-2">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2">About</a>
           </li>
         </ul>
-        <p class="text-center">
-          &copy;2024, Bandaranayake College Science Society
+        <p style="color: rgb(216, 216, 216) !important" class="text-center">
+          &copy; 2024 Company, Inc
         </p>
       </div>
     </footer>
     <!--FOOTER SECTION END-->
 
-    <!--OUR PROJECTS START
-    <div>
-      <a href="/the_last_tree_on_earth.html">
-        <div
-          class="card card-project col-xs-12 col-sm-12 col-md-6 col-lg-3 mt-2 p-2 float-md-start bg-dark text-white"
-        >
-          <img
-            src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/f67ed893136833.5e5d5853aacfc.jpg"
-            class="card-img"
-            alt="..."
-          />
-          <div
-            class="card-img-overlay d-flex justify-content-start align-items-end"
-          >
-            <h5 class="card-title">THE LAST TREE ON EARTH</h5>
-            <img class="arrow-img" src="/arrow-right-fill.svg" alt="" />
-          </div>
-        </div>
-      </a>
-      <a href="">
-        <div
-          class="card card-project col-xs-12 col-sm-12 col-md-6 col-lg-3 bg-dark text-white float-md-start mt-2 p-2"
-        >
-          <img
-            src="https://imgs.search.brave.com/03oArTMvEaVCWagFRxJo0SB2SjzqNGEi8qJOvyODf-Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuYXhpb3MuY29t/L3RXeU91Yjc3UjRH/VGNSazR4UTVKeEdU/Vjh4MD0vMHgwOjM4/NDB4MjE2MC8xOTIw/eDEwODAvMjAyMy8w/OC8zMC8xNjkzNDA0/MjUwMzQyLmpwZz93/PTE5MjA"
-            class="card-img"
-            alt="..."
-          />
-          <div
-            class="card-img-overlay d-flex justify-content-start align-items-end"
-          >
-            <h5 class="card-title">TRINEX HUMANOID ROBOT</h5>
-            <img class="arrow-img" src="/arrow-right-fill.svg" alt="" />
-          </div></div
-      ></a>
-      <a href="">
-        <div
-          class="card card-project col-xs-12 col-sm-12 col-md-6 col-lg-3 bg-dark text-white float-md-start mt-2 p-2"
-        >
-          <img
-            src="https://imgs.search.brave.com/wKrxFDSUIKu2IhrFgOJU46th3Codldor94AnKqYO1kk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9hc3Ryb25hdXQt/c3BhY2Vhc3Ryb25h/dXQtc3BhY2Vhc3Ry/b25hdXQtc3BhY2Ut/c3BhY2UtZXhwbG9y/YXRpb24tY29uY2Vw/dC0zLWRfOTEyMjE0/LTE2NzY0LmpwZz9z/aXplPTYyNiZleHQ9/anBn"
-            class="card-img"
-            alt="..."
-          />
-          <div
-            class="card-img-overlay d-flex justify-content-start align-items-end"
-          >
-            <h5 class="card-title">SPACE TRAVEL</h5>
-            <img class="arrow-img" src="/arrow-right-fill.svg" alt="" />
-          </div>
-        </div>
-      </a>
-      <a href="">
-        <div
-          class="card card-project col-xs-12 col-sm-12 col-md-6 col-lg-3 bg-dark text-white float-md-start mt-2 p-2"
-        >
-          <img
-            src="https://imgs.search.brave.com/cUwwLUdGS16a5lkzUhCV1FuqOdltz-uiVN3h9rzM4zY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zY2ll/bmNlLm5hc2EuZ292/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDI0/LzA2L2h1YmJsZS1y/Y3c3LXBvdHcyNDI1/YS5qcGc_dz00MDk2/JmZvcm1hdD1qcGVn"
-            class="card-img"
-            alt="..."
-          />
-          <div
-            class="card-img-overlay d-flex justify-content-start align-items-end"
-          >
-            <h5 class="card-title">COSMIC HORIZON</h5>
-            <img class="arrow-img" src="/arrow-right-fill.svg" alt="" />
-          </div>
-        </div>
-      </a>
-      <a href="">
-        <div
-          class="card card-project col-xs-12 col-sm-12 col-md-6 col-lg-3 bg-dark text-white float-md-start mt-2 p-2"
-        >
-          <img
-            src="https://imgs.search.brave.com/jZaavcdoyBcjCSUs4cNazpUDmr0SJPnp_-HwIw7gmxs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA2LzI4LzQ1Lzk4/LzM2MF9GXzYyODQ1/OTgyM185bmtrSVlE/anpBaG1rTkVYWjYw/SEYzdHM5NmFtV2Iz/US5qcGc"
-            class="card-img"
-            alt="..."
-          />
-          <div
-            class="card-img-overlay d-flex justify-content-start align-items-end"
-          >
-            <h5 class="card-title">QUANTUM COMPUTERS</h5>
-            <img class="arrow-img" src="/arrow-right-fill.svg" alt="" />
-          </div>
-        </div>
-      </a>
-      <a href="">
-        <div
-          class="card card-project col-xs-12 col-sm-12 col-md-6 col-lg-3 bg-dark text-white float-md-start mt-2 p-2"
-        >
-          <img
-            src="https://imgs.search.brave.com/YKWWdlk8FjKQ0HasOrojzTcWuFSUNf6EO6Lef681Qf0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTQ5/MzI2OTk2NS9waG90/by9tYW5ncm92ZS1m/b3Jlc3QuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPTNxNHVt/NTNjOWhSZUVMRUdf/X3hCbjFSWkJ4RGha/LWN1UmxVSXYta05w/RTg9"
-            class="card-img"
-            alt="..."
-          />
-          <div
-            class="card-img-overlay d-flex justify-content-start align-items-end"
-          >
-            <h5 class="card-title">MANGROVE ECO SYSTEM</h5>
-            <img class="arrow-img" src="/arrow-right-fill.svg" alt="" />
-          </div></div
-      ></a>
-    </div>
-    OUR PROJECTS END-->
-
-    <script src="https://unpkg.com/swiper@9.3.1/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js"></script>
     <script src="https://bootstrapbrain.com/demo/components-pro/blogs-pro/blog-1/assets/controller/blog-1.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/swiper@9.3.1/swiper-bundle.min.js"></script>
   </body>
 </html>
