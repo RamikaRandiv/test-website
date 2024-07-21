@@ -7,25 +7,20 @@ window.addEventListener("scroll", function () {
 
 // Set the date we're counting down to
 var countDownDate = new Date("July 24, 2024 00:00:00").getTime();
-
 // Update the count down every 1 second
 var x = setInterval(function () {
   // Get todays date and time
   var now = new Date().getTime();
-
   // Find the distance between now and the count down date
   var distance = countDownDate - now;
-
   // Time calculations for days, hours, minutes and seconds
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
   // Display the result in the element with id="demo"
   document.getElementById("demo").innerHTML =
     days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
@@ -35,56 +30,112 @@ var x = setInterval(function () {
   }
 }, 1000);
 
-// Define the block elements and corresponding button elements in arrays
-var blocks = [];
-var buttons = [];
-for (let i = 1; i <= 8; i++) {
-  blocks.push(document.getElementById(`block${i}`));
-  buttons.push(document.getElementById(`b${i}`));
+
+
+/*Time updater*/
+function timeSince(date) {
+  const now = new Date();
+  const seconds = Math.floor((now - new Date(date)) / 1000);
+  let interval = Math.floor(seconds / 3600);
+
+  if (interval > 1) {
+    return interval + " hours ago";
+  }
+  interval = Math.floor(seconds / 60);
+  if (interval > 1) {
+    return interval + " minutes ago";
+  }
+  return Math.floor(seconds) + " seconds ago";
 }
 
-// Define the color sets for mouse enter and leave events
-var enterColors = [
-  "rgba(0, 0, 255, 1)",
-  "rgba(0, 128, 0, 1)",
-  "rgba(162, 0, 255, 1)",
-  "rgba(0, 217, 255, 1)",
-  "rgba(132, 0, 255, 1)",
-  "rgba(219, 205, 3, 1)",
-  "rgba(51, 255, 0, 1)",
-  "rgba(78, 38, 141, 1)",
-];
-
-var leaveColors = [
-  "rgba(0, 0, 255, 0.384)",
-  "rgba(0, 128, 0, 0.267)",
-  "rgba(162, 0, 255, 0.288)",
-  "rgba(0, 217, 255, 0.199)",
-  "rgba(132, 0, 255, 0.199)",
-  "rgba(219, 205, 3, 0.199)",
-  "rgba(51, 255, 0, 0.267)",
-  "rgba(78, 38, 141, 0.247)",
-];
-
-// Add event listeners in a loop
-buttons.forEach((button, index) => {
-  button.addEventListener("mouseenter", function () {
-    blocks[index].style.backgroundColor = enterColors[index];
-  });
-  button.addEventListener("mouseleave", function () {
-    blocks[index].style.backgroundColor = leaveColors[index];
-  });
-});
-
-/*const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("show");
-    } else {
-      entry.target.classList.remove("show");
+function updateTimes() {
+  const posts = document.querySelectorAll(".post");
+  posts.forEach((post) => {
+    const timestamp = post.getAttribute("data-timestamp");
+    const timeAgoElement = post.querySelector(".time-ago");
+    if (timestamp && timeAgoElement) {
+      timeAgoElement.textContent = timeSince(timestamp);
     }
   });
-});
+}
+// Initial update
+updateTimes();
+// Update every minute
+setInterval(updateTimes, 60000);
 
-const hiddenElements = document.querySelectorAll(".hidden");
-hiddenElements.forEach((el) => observer.observe(el));*/
+//search bar
+function searchParagraphs() {
+  const searchTerm = document.getElementById("searchBar").value.toLowerCase();
+  const paragraphs = document.querySelectorAll(".paragraph");
+  const noResultsMessage = document.getElementById("noResultsMessage");
+  let resultsFound = false;
+
+  if (searchTerm === "") {
+    paragraphs.forEach((paragraph) => {
+      paragraph.classList.add("show");
+      removeHighlight(paragraph);
+    });
+    noResultsMessage.style.display = "none";
+  } else {
+    paragraphs.forEach((paragraph) => {
+      const text = paragraph.innerText.toLowerCase();
+      if (text.includes(searchTerm)) {
+        paragraph.classList.add("show");
+        highlightText(paragraph, searchTerm);
+        resultsFound = true;
+      } else {
+        paragraph.classList.remove("show");
+        removeHighlight(paragraph);
+      }
+    });
+    noResultsMessage.style.display = resultsFound ? "none" : "block";
+  }
+}
+
+function highlightText(paragraph, searchTerm) {
+  const textNodes = getTextNodes(paragraph);
+  textNodes.forEach((node) => {
+    const parent = node.parentNode;
+    const text = node.nodeValue;
+    const regex = new RegExp(`(${searchTerm})`, "gi");
+    const highlightedText = text.replace(
+      regex,
+      '<span class="highlight">$1</span>'
+    );
+    const tempDiv = document.createElement("div");
+    tempDiv.innerHTML = highlightedText;
+    while (tempDiv.firstChild) {
+      parent.insertBefore(tempDiv.firstChild, node);
+    }
+    parent.removeChild(node);
+  });
+}
+
+function removeHighlight(paragraph) {
+  const highlightedNodes = paragraph.querySelectorAll("span.highlight");
+  highlightedNodes.forEach((node) => {
+    const parent = node.parentNode;
+    parent.replaceChild(document.createTextNode(node.innerText), node);
+    parent.normalize();
+  });
+}
+
+function getTextNodes(node) {
+  const textNodes = [];
+  if (node.nodeType === 3) {
+    textNodes.push(node);
+  } else {
+    node.childNodes.forEach((child) => {
+      textNodes.push(...getTextNodes(child));
+    });
+  }
+  return textNodes;
+}
+
+// Show all paragraphs on initial load
+document.addEventListener("DOMContentLoaded", () => {
+  const paragraphs = document.querySelectorAll(".paragraph");
+  paragraphs.forEach((paragraph) => {
+    paragraph.classList.add("show");
+  });
+});
