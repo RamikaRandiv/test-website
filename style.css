@@ -4,58 +4,67 @@ body{
     font-size: 18px;
     margin: 0;
     padding: 0;
-    background-color: rgb(22,21,25);
-    user-select: none;
 }
 
 p{
-    color: rgb(139, 139, 139);
-}
-
-div{
-    overflow: hidden !important;
+    color: rgb(0, 0, 0);
+    font-family: "Merriweather";
 }
 
 h1, h2 ,h3 , h4, h5{
-    color:  rgb(255, 255, 255) !important;
+    color:  rgb(27, 27, 27) !important;
     font-weight: bold !important;
 }
 
-.topic-1{
-    color: rgb(149,62,116) !important;
-    font-weight: bold;
-}
-
-.topic-2{
-    color:  rgb(255, 255, 255)!important;
-    font-weight: bold;
+h6{
+    font-weight: 600;
 }
 
 a{
-    text-decoration: none;       
+    text-decoration: none!important; 
+    color: aliceblue !important;      
+    cursor: pointer;
+}
+
+a:active{
+    border-color: rgb(34, 65, 185);
+    border-style: solid;
+    border-width: 4px;
 }
 
 .nav-link:hover , .nav-link.active{
-    color: rgb(197, 44, 138);
+    color: rgb(51, 51, 51);
 }
 
 .bg-dark{
     background-color: black !important;
 }
 
-.card-img-overlay{
-    overflow: hidden;
+.swiper-pagination-bullet{
+    background-color: rgb(71, 71, 71) !important;
 }
 
-.card:hover{
-    cursor: pointer;
-    /*if cards doesn't fit correctly when hover remove the border of 2px*/
-    border: 2px;
+.time-ago{
+    font-family: DM Mono;
 }
 
 /*--------------------
 -------NAVBAR---------
 ---------------------*/
+
+.dropend{
+    width: 100%;
+}
+
+li> a{
+    color:rgb(255, 255, 255) !important;
+}
+
+.dropdown-item{
+    width: 100% !important;
+    text-align: center !important;
+}
+
 .dropdown:hover>.dropdown-menu {
   display: block;
 }
@@ -65,47 +74,50 @@ a{
     pointer-events: none;
 }
 
+.dropdown-toggle{
+    color: black;
+}
+
 .dropdown-toggle:hover{
-    color:  rgb(197, 44, 138) !important;
+    color:  rgb(211, 211, 211) !important;
     cursor: pointer !important;
 }
 
 .dropdown-item:hover{
-    color:  rgb(197, 44, 138) !important;
+    color:  rgb(37, 37, 37) !important;
     cursor: pointer !important;
 }
 
 .dropdown-item:active{
-    background-color:  rgb(197, 44, 138) !important;
-    color: white !important;
+    background-color:  black  !important;
+    color:white!important;
     cursor: pointer !important;
 }
 
 .dropdown-menu{
-    border: none !important;
+    border: none ;
+    width: 100%;
+    background-color:  black !important;
 }
 
 .navbar{
-    min-height: 70px;
-    background-color: rgb(26,26,28) !important;
+    min-height: 90px;
+    background-color: rgb(0, 0, 0) !important;
 }
 
-.navbar-div{
-    z-index: 2;
+.nav-link:hover , .nav-link.active{
+    color: rgb(51, 51, 51);
 }
 
-.navbar-brand{
-    text-align: center;
-    font-size: 30px;
-    font-weight: 600;
-    width: 100%;
-    z-index: 1;
-    position: absolute;
+.nav-brand:active{
+    border-color: rgb(34, 65, 185);
+    border-style: solid;
+    border-width: 4px;
 }
 
 .nav-link{
     color: white;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 /*--------------------
@@ -113,31 +125,40 @@ a{
 ---------------------*/
 
 .parallax {
-    background-image: url('https://cdn.pixabay.com/photo/2017/09/10/18/29/universe-2736507_1280.jpg');
     height: 70vh; /* Adjust as needed */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
-  
-    display: flex;
-    justify-content: start;
-    align-items: center;
 }
 
 
 /*--------------------
--------CAROUSEL-------
+--------DTV---------
 ---------------------*/
-.swiper-pagination-bullet{
-    background-color: rgb(197, 44, 138) !important;
+
+.dtv{
+    background-color: rgba(211, 211, 211, 0.829);
 }
 
+.topic-1{
+    color: rgb(246,65,55) !important;
+    font-weight: bold;
+}
+
+.topic-2{
+    color:  rgb(24, 24, 24)!important;
+    font-weight: bold;
+}
 
 /*--------------------
 -------ABOUT US-------
 ---------------------*/
+
+.about{
+    background-color: rgba(219, 219, 219, 0.637);
+}
+
 .about-us-topic{
     flex-direction: column;
 }
@@ -152,7 +173,7 @@ a{
 
 .about-us-paragraph{
     text-align: center;
-    color: rgb(170, 170, 170);
+    color: rgb(26, 26, 26);
 }
 
 /*--------------------
@@ -162,7 +183,12 @@ a{
 .card{
     background-color: transparent !important;
     border-color: transparent !important;
-    text-align: center;
+    border: 0px !important;
+    user-select: none;
+}
+
+.card:hover{
+    cursor: pointer;
 }
 
 .card-project {
@@ -171,13 +197,29 @@ a{
 
 .card-img{
     height: 50vh !important;
-    border-radius: 0% ;
+    border-radius: 0% !important;
     object-fit: cover !important;
-    filter: contrast(90%);
+    filter: brightness(70%);
+}
+
+.card > div > p {
+    color: white !important;
+}
+
+.card > div > div > .time-ago {
+    color: white !important;
+}
+
+.card-img-overlay{
+    overflow: hidden;
 }
 
 .card-title{
-    color: rgb(255, 255, 255) !important;
+    color:  rgb(255, 255, 255)!important;
+}
+
+.card-title-2{
+    color:  rgb(27, 27, 27)!important;
 }
 
 .arrow-img{
@@ -211,81 +253,47 @@ a{
 }
 
 .card-news-sub{
-    max-height: 33vh !important;
+    height: 33vh !important;
     width: 100% !important;
-    margin-bottom:1vh;
 }
 
 .card-news-img-sub{
     height: 33vh !important;
     width: 100% !important;
+    filter: brightness(70%);
 }
-
 
 /*--------------------
 ---------Maps---------
 ---------------------*/
+
 .maps{
     text-align: center;
+    background-color: rgb(197, 197, 197);
 }
 
-.block1, .block2, .block3 , .block4, .block5,.block6 {
+.block1, .block2, .block3 , .block4, .block5,.block6,.block7, .block8 {
     width: 100%;
     aspect-ratio: 1 !important;
-}
-
-.block1{
-    background-color: rgba(0, 0, 255, 0.384);
-}
-
-.block2{
-    background-color: rgba(0, 128, 0, 0.267);
-}
-.block3{
-    background-color: rgba(162, 0, 255, 0.288);
-}
-
-.block4{
-    background-color: rgba(0, 217, 255, 0.199);
-}
-
-.block5{
-    background-color: rgba(132, 0, 255, 0.199);
-}
-
-.block6{
-    background-color: rgba(219, 205, 3, 0.199);
-}
-
-.block7, .block8{
-    aspect-ratio: 1;
-    width: 100%;
-}
-
-.div{
-    width: 100%;
-}
-
-.block7{
-    background-color: rgba(51, 255, 0, 0.267);
-}
-
-.block8{
-    background-color: rgba(78, 38, 141, 0.247);
+    font-size:70% !important;
 }
 
 .block1:hover, .block2:hover, .block3:hover , .block4:hover, .block5:hover,.block6:hover, .block7:hover, .block8:hover{
-    background-color: blue;
+    filter: brightness(50%);
+    cursor: pointer;
 }
 
 .block1, .block2, .block3 , .block4, .block5,.block6, .block7, .block8 {
-    overflow-y: hidden;
+    overflow: hidden;
+    background-color: rgb(66, 66, 66);
+    text-align: center;
 }
 
 .carousel-control-prev, .carousel-control-next{
-    width:100px ;
-    height: 100px;
+    width:30px ;
+    height: 30px;
     margin-top: 15%;
+    background-color: rgb(73, 73, 73) !important;
 }
 
 .carousel{
@@ -311,24 +319,37 @@ a{
     text-align: center;
 }
 
+/*--------------------
+--------Footer--------
+---------------------*/
 
-/*
-.hidden{
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(-100%);
-    transition: all 1s;
+footer{
+    background-color: rgb(0, 0, 0) ;
 }
 
-.show{
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
+/*-----------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------*/
+
+
+/*--------------------
+------SERCH BAR-------
+---------------------*/
+
+#searchBar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
 }
 
-@media(prefers-reduced-motion){
-    .hidden{
-        transition: none;
-    }
+.paragraph {
+    display: none;
 }
-*/
+
+.paragraph.show {
+    display: block;
+}
+
+.highlight {
+    background-color: rgb(246,65,55);
+}
