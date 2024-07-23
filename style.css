@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
 body{
     font-family: inter , sans-serif;
     overflow-x: hidden;
@@ -8,7 +13,7 @@ body{
 
 p{
     color: rgb(0, 0, 0);
-    font-family: "Merriweather";
+    font-family: "Public Sans" !important;
 }
 
 h1, h2 ,h3 , h4, h5{
@@ -47,6 +52,8 @@ a:active{
 .time-ago{
     font-family: DM Mono;
 }
+
+.arrow-img
 
 /*--------------------
 -------NAVBAR---------
@@ -129,7 +136,7 @@ li> a{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
 }
 
 
@@ -143,11 +150,13 @@ li> a{
 
 .topic-1{
     color: rgb(246,65,55) !important;
+    font-family: "Merriweather" !important;
     font-weight: bold;
 }
 
 .topic-2{
     color:  rgb(24, 24, 24)!important;
+    font-family: "Merriweather" !important;
     font-weight: bold;
 }
 
@@ -327,6 +336,35 @@ li> a{
 footer{
     background-color: rgb(0, 0, 0) ;
 }
+
+footer > div > div > div > h4{
+    color: white !important;
+    font-weight: 400;
+}
+
+footer > div > div > ul > li > a{
+    color: white !important;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+footer > div > div > ul > li > a:hover{
+    text-decoration: underline dashed 1px  !important;
+}
+
+
+footer > div > div > div > ul > li > a > img{
+    background-color: rgb(47,47,50);
+    padding: 5px;
+    border-radius: 50%;
+}
+
+footer > div > div > div > ul > li > a > img:hover{
+    background-color: rgb(80, 80, 83);
+    padding: 5px;
+    border-radius: 50%;
+}
+
 
 /*-----------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------*/
